@@ -1,0 +1,53 @@
+.stud {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    background-color: black;
+}
+.stud div {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    background: white;
+    animation: stud 1.5s cubic-bezier(0, 0.6, 0.6, 2) infinite;
+}
+
+.stud div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.60s;
+}
+
+.stud div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.50s;
+}
+
+.stud div:nth-child(3) {
+    left: 56px;
+    animation-delay: -0.40;
+}
+
+.stud div:nth-child(4) {
+    left: 80px;
+    animation-delay: -0.30;
+}
+
+.stud div:nth-child(5) {
+    left: 104px;
+    animation-delay: -0.20;
+}
+
+  @keyframes stud {
+    
+  from{
+      top: 8px;
+      height: 64px;
+    }
+  to {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  
